@@ -1,0 +1,846 @@
+/* ===================================================
+   HAPPY BIRTHDAY MY CUTIE AMY
+   STYLE.CSS - PART 1
+=================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#000;
+
+overflow:hidden;
+
+color:white;
+
+}
+
+/* ==========================
+PAGES
+========================== */
+
+.page{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100vh;
+
+display:none;
+
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+background:
+
+linear-gradient(
+135deg,
+#090909,
+#180022,
+#300042
+);
+
+overflow:hidden;
+
+}
+
+.active{
+
+display:flex;
+
+}
+
+/* ==========================
+GLASS BOX
+========================== */
+
+.box{
+
+width:90%;
+max-width:430px;
+
+padding:35px;
+
+text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:
+
+0 0 30px hotpink;
+
+animation:fadeUp .8s;
+
+}
+
+.box h1{
+
+font-size:36px;
+
+color:#ff4fa5;
+
+margin-bottom:10px;
+
+}
+
+.box h2{
+
+margin-bottom:20px;
+
+}
+
+.box p{
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ==========================
+PASSWORD INPUT
+========================== */
+
+input{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+outline:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+margin-bottom:20px;
+
+text-align:center;
+
+}
+
+/* ==========================
+BUTTON
+========================== */
+
+button{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-size:18px;
+
+background:
+
+linear-gradient(
+45deg,
+#ff0080,
+#ff4fa5
+);
+
+color:white;
+
+transition:.35s;
+
+box-shadow:
+
+0 0 25px hotpink;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+.continue{
+
+display:none;
+
+position:absolute;
+
+bottom:40px;
+
+}
+
+/* ==========================
+COUNTDOWN
+========================== */
+
+#count{
+
+font-size:170px;
+
+font-weight:bold;
+
+color:#ff4fa5;
+
+text-shadow:
+
+0 0 30px hotpink;
+
+animation:pulse 1s infinite;
+
+}
+
+/* ==========================
+BLACK SCREEN
+========================== */
+
+#blackPage{
+
+background:black;
+
+}
+
+.loading{
+
+font-size:35px;
+
+letter-spacing:4px;
+
+animation:pulse 1s infinite;
+
+}
+
+/* ==========================
+VIDEOS
+========================== */
+
+video{
+
+width:100%;
+
+height:100vh;
+
+object-fit:cover;
+
+background:black;
+
+}
+
+/* ==========================
+HEARTS
+========================== */
+
+#hearts{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+/* ==========================
+ANIMATIONS
+========================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+/* ===================================================
+   STYLE.CSS - PART 2A
+   MESSAGE + CAKE + GALLERY
+=================================================== */
+
+/* ==========================
+MESSAGE PAGE
+========================== */
+
+.messageBox{
+
+width:90%;
+
+max-width:850px;
+
+padding:40px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 0 30px hotpink;
+
+text-align:center;
+
+animation:fadeUp 1s;
+
+}
+
+.messageBox h1{
+
+font-size:40px;
+
+margin-bottom:25px;
+
+color:#ff66b3;
+
+}
+
+#typing{
+
+font-size:22px;
+
+line-height:2;
+
+white-space:pre-line;
+
+}
+
+/* ==========================
+CAKE PAGE
+========================== */
+
+#cakePage{
+
+background:
+
+linear-gradient(
+135deg,
+#170018,
+#32003d,
+#000
+);
+
+}
+
+.cake{
+
+position:relative;
+
+width:220px;
+
+height:220px;
+
+margin-top:30px;
+
+}
+
+.cake1{
+
+position:absolute;
+
+bottom:0;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:220px;
+
+height:80px;
+
+background:#ff4fa5;
+
+border-radius:15px;
+
+}
+
+.cake2{
+
+position:absolute;
+
+bottom:70px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:180px;
+
+height:65px;
+
+background:#ff7dc2;
+
+border-radius:15px;
+
+}
+
+.cake3{
+
+position:absolute;
+
+bottom:130px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:140px;
+
+height:55px;
+
+background:#ffc1dd;
+
+border-radius:15px;
+
+}
+
+.candle{
+
+position:absolute;
+
+top:15px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:12px;
+
+height:45px;
+
+background:white;
+
+border-radius:5px;
+
+}
+
+.candle::after{
+
+content:"";
+
+position:absolute;
+
+top:-18px;
+
+left:-3px;
+
+width:18px;
+
+height:18px;
+
+background:gold;
+
+border-radius:50%;
+
+box-shadow:0 0 25px yellow;
+
+animation:flame .5s infinite alternate;
+
+}
+
+@keyframes flame{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.25);
+
+}
+
+}
+
+/* ==========================
+PHOTO SLIDESHOW
+========================== */
+
+.slideshow{
+
+width:90%;
+
+max-width:900px;
+
+height:80vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+overflow:hidden;
+
+}
+
+.slideshow img{
+
+width:100%;
+
+height:100%;
+
+object-fit:contain;
+
+border-radius:25px;
+
+box-shadow:0 0 35px hotpink;
+
+transition:1s;
+
+}
+/* ===================================================
+   STYLE.CSS - PART 2B
+   FINAL SCREEN + HEARTS + BUTTONS + RESPONSIVE
+=================================================== */
+
+/* ==========================
+FINAL PAGE
+========================== */
+
+#finalPage{
+
+background:#000;
+
+overflow:hidden;
+
+}
+
+.finalBox{
+
+position:relative;
+
+z-index:10;
+
+width:90%;
+
+max-width:900px;
+
+padding:45px;
+
+text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 0 35px hotpink;
+
+}
+
+.finalBox h1{
+
+font-size:55px;
+
+color:#ff4fa5;
+
+margin-bottom:15px;
+
+}
+
+.finalBox h2{
+
+font-size:38px;
+
+margin-bottom:20px;
+
+}
+
+.finalBox p{
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+/* ==========================
+BACKGROUND PHOTOS
+========================== */
+
+#finalPhotos{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+display:grid;
+
+grid-template-columns:repeat(5,1fr);
+
+grid-template-rows:repeat(2,1fr);
+
+z-index:1;
+
+opacity:.18;
+
+}
+
+#finalPhotos img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+/* ==========================
+CONTINUE BUTTON
+========================== */
+
+.continue{
+
+display:none;
+
+padding:15px 40px;
+
+font-size:18px;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(45deg,#ff0080,#ff5eb8);
+
+color:white;
+
+cursor:pointer;
+
+box-shadow:0 0 25px hotpink;
+
+transition:.4s;
+
+}
+
+.continue:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 40px hotpink;
+
+}
+
+/* ==========================
+FLOATING HEARTS
+========================== */
+
+.heart{
+
+position:fixed;
+
+bottom:-50px;
+
+font-size:24px;
+
+pointer-events:none;
+
+animation:floatHeart 8s linear forwards;
+
+z-index:999;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) scale(1);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(1.8);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================
+FADE ANIMATION
+========================== */
+
+.fadeIn{
+
+animation:fadeIn 1s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/* ==========================
+SHAKE
+========================== */
+
+.shake{
+
+animation:shake .5s;
+
+}
+
+@keyframes shake{
+
+0%{transform:translateX(0);}
+
+20%{transform:translateX(-10px);}
+
+40%{transform:translateX(10px);}
+
+60%{transform:translateX(-10px);}
+
+80%{transform:translateX(10px);}
+
+100%{transform:translateX(0);}
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.box,
+.messageBox,
+.finalBox{
+
+width:95%;
+
+padding:25px;
+
+}
+
+.box h1,
+.finalBox h1{
+
+font-size:32px;
+
+}
+
+.box h2,
+.finalBox h2{
+
+font-size:24px;
+
+}
+
+#typing{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+#count{
+
+font-size:110px;
+
+}
+
+.slideshow{
+
+height:60vh;
+
+}
+
+button{
+
+font-size:16px;
+
+padding:12px 28px;
+
+}
+
+}
