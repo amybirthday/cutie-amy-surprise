@@ -305,7 +305,7 @@ clearInterval(timer);
 continue3.style.display="block";
 continue3.style.visibility="visible";
 continue3.style.opacity="1";
-
+continue3.scrollIntoView({behavior:"smooth", block:"center"});
 }
 
 },35);
