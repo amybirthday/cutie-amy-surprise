@@ -241,7 +241,8 @@ INTRO VIDEO 2 END
 intro2.addEventListener("ended",()=>{
 
 continue2.style.display="block";
-
+continue3.style.visibility="visible";
+continue3.style.opacity="1";
 });
 
 /* ==========================
